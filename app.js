@@ -7,6 +7,8 @@ if ('serviceWorker' in navigator) {
 const input = document.getElementById('fileInput');
 const gallery = document.getElementById('gallery');
 
+alert("Welcome to my gallery");
+
 const loadImages = () => {
   const images = JSON.parse(localStorage.getItem('images') || '[]');
   images.forEach(src => {
