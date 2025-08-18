@@ -12,5 +12,13 @@
   <h1>📸 My Gallery</h1>
   <input type="file" id="fileInput" accept="image/*" multiple />
   <div id="gallery"></div>
+  <script>
+    // frontend (repo B)
+async function getProfile(userId) {
+  const res = await fetch("https://auth-p1ny.onrender.com/api/profile/" + userId);
+  const data = await res.json();
+  alert(data);
+}
+  </script>
 </body>
 </html>
